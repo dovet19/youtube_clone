@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
 
+// TODO: collapse search bar for xs screen
+
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
 

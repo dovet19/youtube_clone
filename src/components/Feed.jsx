@@ -29,8 +29,9 @@ const Feed = () => {
         <Typography
           className="copyright"
           variant="body2"
+          align="center"
           sx={{ mt: 1.5, color: "#fff" }}>
-          Copyright 2022 Kevin Lim
+          &#169; 2022 Kevin Lim
         </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
