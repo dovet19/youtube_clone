@@ -16,6 +16,8 @@ const VideoCard = ({
     snippet,
   },
 }) => {
+  const date = snippet?.publishedAt.slice(0, 10);
+
   return (
     <Card
       sx={{
@@ -52,6 +54,9 @@ const VideoCard = ({
           <Typography variant="subtitle2" fontWeight="bold" color="gray">
             {snippet?.channelTitle || demoChannelTitle}
             <CheckCircle sx={{ fontSize: 12, color: "gray", ml: "5px" }} />
+          </Typography>
+          <Typography variant="subtitle2" color="gray">
+            {date}
           </Typography>
         </Link>
       </CardContent>
